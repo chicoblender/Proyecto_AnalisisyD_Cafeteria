@@ -1,0 +1,251 @@
+CREATE DATABASE dbcuentas2023
+GO
+USE dbcuentas2023
+GO
+
+CREATE TABLE usuarios(
+	id int IDENTITY(1,1) NOT NULL,
+	nom_usr varchar(20) NOT NULL,
+	ci_usr varchar(20) NOT NULL,
+	nombres varchar(30) NOT NULL,
+	apellidos varchar(30) NOT NULL,
+	pass varchar(20) NOT NULL,
+	email varchar(60) NOT NULL,
+	img varchar(100) NULL,
+	nivel varchar(10) NOT NULL,
+	estado int,
+	PRIMARY KEY (id)
+);
+
+--datos
+--usuarios 
+INSERT INTO usuarios VALUES ('juanp', '4477665', 'Juan', 'Perez Perez', '12345', 'juanpp@hotmail.com', 'f:\fotos\foto.jpg', 'admin',1);
+INSERT INTO usuarios VALUES ('marilu', '55667788', 'Maria Lourdes', 'Morales Nina', '12345', 'marilu@gamail.com', 'f:\fotos\foto.jpg', 'user',0);
+INSERT INTO usuarios VALUES ('victortc', '2233445', 'Victor Hugo', 'Ticona Chavez', '54321', 'victorhtc@gmail.com', 'f:\fotos\foto.jpg', 'admin',1);
+INSERT INTO usuarios VALUES ('lidiat', '9988776', 'Lidia', 'Torrez Lopez', '54321', 'liditlo@yahoo.com', 'f:\fotos\foto.jpg', 'user',1);
+INSERT INTO usuarios VALUES ('carlosp', '987122', 'Carlos Diego', 'Mamani Rivero', '12345', 'carlitos23@hotmail.com', 'f:\fotos\foto.jpg', 'user',0);
+
+--sp para listar a todos los usuarios
+CREATE PROCEDURE spu_listado_usuarios_ci
+  @ci_usr VARCHAR(20)
+  --@mensaje VARCHAR(50) OUTPUT
+AS	
+	--IF(exists(SELECT * FROM usuarios WHERE ci_usr=@ci_usr))
+	 --BEGIN 
+	  SELECT * FROM usuarios WHERE ci_usr=@ci_usr
+	  --SELECT * FROM usuarios WHERE ci_usr LIKE '%9%'
+    --  SET @mensaje = '1'	  
+    --END
+    --ELSE      
+    --  SET @mensaje = '0'	        
+GO
+
+DECLARE @mensaje VARCHAR (50)
+SET @mensaje = ''
+EXEC spu_listado_usuarios_ci '4477665',@mensaje OUTPUT
+PRINT @mensaje
+
+CREATE PROCEDURE spu_listado_usuarios
+
+AS
+	SELECT * FROM usuarios
+GO
+
+
+--sp para registrar a un usuario
+CREATE PROCEDURE spu_registrar_usuario  
+  @nom_usr VARCHAR(20),
+  @ci_usr VARCHAR(20),
+  @nombres VARCHAR(30),
+  @apellidos VARCHAR(30),
+  @pass VARCHAR(20),
+  @email VARCHAR(60),
+  @img VARCHAR(100),
+  @nivel VARCHAR(10),  
+  @estado INT,  
+  @mensaje VARCHAR(50) OUTPUT 
+AS
+BEGIN  
+  IF(exists(SELECT * FROM usuarios WHERE ci_usr=@ci_usr))
+    SET @mensaje = '0' --el ci del usuario ya existe	  
+  ELSE
+  BEGIN
+    INSERT INTO usuarios VALUES(@nom_usr,@ci_usr,@nombres,@apellidos,@pass,@email,@img,@nivel,@estado)  
+    SET @mensaje = '1' --registrado correctamente	  
+  END  
+END  
+GO
+
+
+--sp para verificar el nombre y contraena de un usuario 
+CREATE PROCEDURE spu_verifica_usuario  
+  @nom_usr VARCHAR(20),  
+  @pass VARCHAR(20),     
+  @mensaje VARCHAR(50) OUTPUT 
+AS
+BEGIN  
+  IF(exists(SELECT * FROM usuarios WHERE nom_usr = @nom_usr AND pass=@pass))
+    SET @mensaje = '1'	 --encontrado
+  ELSE    
+    SET @mensaje = '0'   --no encontrado
+END  
+GO
+
+
+--sp para modificar datos de un usuario 
+CREATE PROCEDURE spu_modificar_usuario  
+  @id INT,
+  @nom_usr VARCHAR(20),
+  @ci_usr VARCHAR(20),
+  @nombres VARCHAR(30),
+  @apellidos VARCHAR(30),
+  @pass VARCHAR(20),
+  @email VARCHAR(60),
+  @img VARCHAR(100),
+  @nivel VARCHAR(10),  
+  @estado INT,  
+  @mensaje VARCHAR(50) OUTPUT 
+AS
+BEGIN  
+  IF (exists(SELECT * FROM usuarios WHERE id=@id))
+  BEGIN          
+    
+    UPDATE usuarios SET nom_usr=@nom_usr, ci_usr=@ci_usr, nombres=@nombres, apellidos=@apellidos, pass=@pass,email=@email,img=@img, nivel=@nivel,estado=@estado
+    WHERE id=@id  
+    SET @mensaje = '1' --modificado
+  END
+  ELSE    
+  BEGIN        
+    SET @mensaje = '0' --no modificado
+  END
+END  
+GO
+
+DECLARE @mensaje VARCHAR (50)
+SET @mensaje = ''
+EXEC spu_modificar_usuario 'juanp','4477665','Juana','Perez','12345','juan@gamil.com','f:\fotos\foto.jpg','admin','1',@mensaje OUTPUT
+PRINT @mensaje
+
+--SP para eliminar un usuario en base a su id
+CREATE PROCEDURE spu_eliminar_usuario
+@id INT,
+@mensaje VARCHAR(50) OUTPUT
+AS
+BEGIN
+  IF(exists(SELECT id FROM usuarios WHERE id=@id))
+    BEGIN
+      DELETE FROM usuarios WHERE id=@id   
+      SET @mensaje='1' --eliminado
+    END    
+  ELSE
+    SET @mensaje='0' --no eliminado
+END
+GO
+
+SELECT*FROM usuarios;
+-------------------------- Tarea H5 ----------------------------------------
+--tabla producto
+CREATE TABLE productos
+(
+id_prod INT IDENTITY(1,1) PRIMARY KEY NOT NULL,--id
+cod_prod VARCHAR(20) NOT NULL, --codigo
+nom_prod VARCHAR(50) NOT NULL, --NOMBRE
+marc_prod VARCHAR(30) NOT NULL,-- marca
+orig_prod VARCHAR(20) NOT NULL,-- origen
+fecha_prod VARCHAR(20) NOT NULL, --fecha de producto
+prec_prod INT NOT NULL, --precio
+garant_prod VARCHAR(20) NOT NULL,--garantia de producto 
+);
+
+--datos de tabla 
+INSERT INTO productos (cod_prod,nom_prod,marc_prod,orig_prod,fecha_prod,prec_prod,garant_prod)
+VALUES 
+('A01','Television','Sony','Japan','12-05-2023',3000,'2 Anhios'),
+('A02','Ps5','Sony','Japan','13-05-2023',5000,'1 Anhio'),
+('A03','Lavadora','LG','Corea del Sur','20-05-2023',2400,'2 Anhios'),
+('A04','Microondas','Toshiva','Japan','35-05-2023',1200,'3 Anhios'),
+('A05','Impresora','Epson','Japan','05-06-2023',1500,'2 Anhios');
+
+--sp para listar a todos los usuarios
+CREATE PROCEDURE spu_listado_productos_cod
+  @cod_prod VARCHAR(20)
+
+AS	
+
+	  SELECT * FROM productos WHERE cod_prod=@cod_prod
+	         
+GO
+-----mostrar el listado de producto-------------
+CREATE PROCEDURE spu_listado_productos
+
+AS
+	SELECT * FROM productos
+GO
+-----sp para registrar productos
+
+CREATE PROCEDURE spu_registrar_producto  
+@cod_prod VARCHAR(20),
+@nom_prod VARCHAR(50),
+@marc_prod VARCHAR(30),
+@orig_prod VARCHAR(20),
+@fecha_prod VARCHAR(20),
+@prec_prod INT,
+@garant_prod VARCHAR(20),
+@mensaje VARCHAR(50) OUTPUT
+AS
+BEGIN  
+  IF(exists(SELECT * FROM productos WHERE cod_prod=@cod_prod))
+    SET @mensaje = '0' --el cod del producto ya existe	  
+  ELSE
+  BEGIN
+    INSERT INTO productos VALUES(@cod_prod,@nom_prod,@marc_prod,@orig_prod,@fecha_prod,@prec_prod,@garant_prod)  
+    SET @mensaje = '1' --registrado correctamente el producto	  
+  END  
+END  
+GO
+-------sp para modificar datos de un producto 
+
+CREATE PROCEDURE spu_modificar_producto 
+@id_prod INT, 
+@cod_prod VARCHAR(20),
+@nom_prod VARCHAR(50),
+@marc_prod VARCHAR(30),
+@orig_prod VARCHAR(20),
+@fecha_prod VARCHAR(20),
+@prec_prod INT,
+@garant_prod VARCHAR(20),
+@mensaje VARCHAR(50) OUTPUT
+AS
+BEGIN  
+  IF (exists(SELECT * FROM productos WHERE id_prod=@id_prod))
+  BEGIN          
+    
+    UPDATE productos SET cod_prod=@cod_prod,nom_prod=@nom_prod,marc_prod=@marc_prod,orig_prod=@orig_prod,fecha_prod=@fecha_prod,prec_prod=@prec_prod,garant_prod=@garant_prod
+    WHERE id_prod=@id_prod  
+    SET @mensaje = '1' --modificado
+  END
+  ELSE    
+  BEGIN        
+    SET @mensaje = '0' --no modificado
+  END
+END  
+GO
+DROP PROCEDURE spu_eliminar_producto
+--SP para eliminar un producto en base a su id
+CREATE PROCEDURE spu_eliminar_producto
+@id_prod INT,
+@mensaje VARCHAR(50) OUTPUT
+AS
+BEGIN
+  IF(exists(SELECT id_prod FROM productos WHERE id_prod=@id_prod))
+    BEGIN
+      DELETE FROM productos WHERE id_prod=@id_prod   
+      SET @mensaje='1' --eliminado
+    END    
+  ELSE
+    SET @mensaje='0' --no eliminado
+END
+GO
+
+SELECT*FROM productos;
+
