@@ -1,0 +1,41 @@
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csprojResolveAssemblyReference.cache
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.dll
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.pdb
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.dll
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.pdb
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.dll
+F:\ProyectosVisualNet\CSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.pdb
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csprojResolveAssemblyReference.cache
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.dll
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.pdb
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.dll
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.pdb
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.dll
+D:\ProyectosCSharp\ProyectoControlUsuarios_Ncapas\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.dll
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.pdb
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.dll
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.AssemblyReference.cache
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CopyComplete
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.dll
+C:\Users\cimbl\OneDrive\Escritorio\Proyecto_Progra_II_H5\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.AssemblyReference.cache
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CoreCompileInputs.cache
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_Progra_II_H5 - copia (2)\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CopyComplete
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaLogicaNegocios.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\bin\Debug\CapaAccesoDatos.pdb
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.AssemblyReference.cache
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CoreCompileInputs.cache
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.csproj.CopyComplete
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.dll
+F:\Cuaderno 4to Semestre\Analisis y Diseño_2\Proyecto_AnalisisyDiseño2\ProyectoControlUsuarios_Ncapas\CapaLogicaNegocios\obj\Debug\CapaLogicaNegocios.pdb
